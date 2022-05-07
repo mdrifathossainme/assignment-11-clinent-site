@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+footer{
+    background-color: #0E1D30;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0 29px;
+}
+.flogo{
+ width: 60%;
+}
+.service-area{
+    display: flex;
+    gap:0 20px ;
+}
+.service-area img{
+    width: 30px;
+    height: 50px;
+}
+.customer p{
+    line-height: 10px;
+    margin-top: 5px;
+    color: #6eabeb;
+    
+}
+.customer p:nth-child(2){
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.adddress p {
+    line-height: 10px;
+    margin-top: 5px;
+    color: #6eabeb;
+}
+.adddress p:nth-child(1){
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.footer-center h4 ,.footer-right h4{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.footer-link{
+  
+}
+.footer-link p{
+line-height: 15px;
+}
+.link{
+    display: inline-block;
+    color: #6eabeb;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.link:hover{
+    color: #FFDD22;
+}
+.subcrice-form input[type=email]{
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+}
+.subcrice-form input[type=submit]{
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FFDD22;
+    color: #000;
+    transition: all .2s ease-in-out;
+
+}
+.subcrice-form input[type=submit]:hover{
+    background-color: #07478b92;
+    color: #fff;
+}
+.social-icon{
+    margin-top: 40px;
+    display: flex;
+    gap: 0 20px;
+}
+.social-icon a{
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+.social-icon a:hover{
+    color: #FFDD22;
+}
+.copy p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.modalText{
+ padding:120px 0;
+ margin-left: 80px;
+ font-size: 30px;
+}
+#button{
+    margin-top: -250px;
+
+}
+#button:hover{
+background-color: red;
+}
+
+@media screen and (max-width:1000px) {
+    footer{
+        padding-left: 20px;
+    }
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .customer p{
+     font-size: 14px;    
+    }
+    .footer-link {
+        display: flex;
+    }
+    .bottom-footer{
+        justify-content: center;
+    }
+    .payment{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    footer{
+        padding-left: 20px;
+    }
+    .footer-container{
+        grid-template-columns:1fr;
+
+    }
+    .footer-link {
+        display: flex;
+    }
+    .bottom-footer{
+        justify-content: center;
+    }
+    .payment{
+        display: none;
+    }
+    .subcrice-form input[type=email]{
+        width: 65%;
+    }
+}
+
+
+
+
+
+
+
+    /* font-family: 'Source Sans Pro', sans-serif; */

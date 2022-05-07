@@ -1,0 +1,37 @@
+.brandCate{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px ;
+}
+.item {
+    background-color: #fff;
+    display: flex;
+     gap: 0 10px;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(183, 174, 174, 0.208);
+    padding:0px 10px ;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.item:hover{
+    background-color: #0E1D30;
+}
+.item:hover p{
+    color: #fff;
+}
+.item p{
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}@media screen and (max-width:1000px) {
+    .brandCate{
+    grid-template-columns: repeat(3,1fr);
+
+    }
+}
+@media screen and (max-width:600px) {
+    .brandCate{
+    grid-template-columns: repeat(2,1fr);
+
+    }
+}

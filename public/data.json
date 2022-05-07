@@ -1,0 +1,133 @@
+[
+    {
+        
+        "name":"Smart Tv",
+        "img":"https://i.ibb.co/SR7wTDb/in-full-hd-tv-te50fa-ua43te50fakxxl-lperspectiveblack-thumb-231881867.png",
+        "description":"Starex 32” GS Smart Android Led Tv Monitor (Double Glass), Size- 32-Inch Display,Panel- Flat Screen, Resolution- HD LED Television, Technology- LED, 3D Technology- 2D TV, Response Time- 5ms, Refresh Rate- 100 Hz, Contrast- Dynamic Mega Contrast",
+        "price":1256,
+        "quantity":123,
+        "supplier":"LG"
+    },
+    {
+        
+        "name":"Laptop",
+        "img":"https://i.ibb.co/5n18Syh/ASUS-Vivo-Book-X512.png",
+        "description":"The latest Asus VivoBook 15 OLED featured 15-inch NanoEdge FHD OLED display and awe-inspiring Harman Kardon-certified audio and comes with a dual-storage design that combines the fast data speeds of an SSD with the large capacities of an HDD, giving",
+        "price":706,
+        "quantity":73,
+        "supplier":"Asus"
+    },
+    {
+        
+        "name":"IMAC",
+        "img":"https://i.ibb.co/Y3Syd0J/i-Mac-2020-Model-3-1-GHz-6-Core-Processor-1.png",
+        "description":"The all-in-one for all. If you can dream it, you can do it on iMac. It's beautifully designed, incredibly intuitive, and packed with powerful tools that let you take any idea to the next level. And the new 21.5-inch model elevates the experience in every way,",
+        "price":1432,
+        "quantity":23,
+        "supplier":"Apple"
+    },
+    {
+        
+        "name":"Washing Mechine",
+        "img":"https://i.ibb.co/PQKSy2c/vwm915647-final-copy-1.png",
+        "description":"The main purpose of technology is to ease our lives. Human beings have capitalized on scientific innovations throughout history to bring positive changes to life. Washing machine is such an outcome of human endeavors to ease lives Walton Washing machine is a result of constant innovation whic",
+        "price":437,
+        "quantity":143,
+        "supplier":"SamSung"
+    },
+    {
+        
+        "name":"Audio Speakers",
+        "img":"https://i.ibb.co/5WHg2xb/large-audio-speakers-3d-rendering-260nw-459278746.png",
+        "description":"Immerse yourself in a theater-quality audio experience in the comfort of your home from this 5.1 speaker system. 1000 Watts peak/500 Watts RMS power delivers powerful surround sound that is THX Certified to bring you a premium audio experience as well as designed to decode Dolby Digital and DTS encoded soundtracks for premium movie and music playback",
+        "price":566,
+        "quantity":13,
+        "supplier":"Sony"
+    },
+    {
+        
+        "name":"Blender",
+        "img":"https://i.ibb.co/xXTWQPQ/istockphoto-504046512-612x612.png",
+        "description":"Just place fruit, vegetables and liquid in the blender and turn the dial.Easily blend food or juice just the way you like it with this dependable partner in the kitchen.Fine Blend, Smooth Texture.Tasty & Healthy.Uniquely shaped blades prevent food accumulation.",
+        "price":256,
+        "quantity":25,
+        "supplier":"Sony"
+    },
+
+
+
+    {
+        
+        "name":"Foure Dorn",
+        "img":"https://cdn.shopify.com/s/files/1/0272/1493/8165/files/product_option_1_5a82c1da-945c-4686-9ffa-5c0738d60a3f_287x.png?v=1603102425",
+        "description":" Juice just the way you like it with this dependable partner in the kitchen.Fine Blend, Smooth Texture.Tasty & Healthy.Uniquely shaped blades prevent food accumulation.",
+        "price":256,
+        "quantity":25,
+        "supplier":"Sony"
+    },
+    {
+        
+        "name":"Hiamond Calo Stud Aenean",
+        "img":"https://cdn.shopify.com/s/files/1/0272/1493/8165/products/14_fc556a81-dc84-4b29-9069-875d9906f6ea_900x900.jpg?v=1603253113",
+        "description":"Ergonomic Design: This men's watch is an unique combination of mechanics and science fiction. The novel double-arch bridge tonneau-shaped case design is ergonomic, so that you can wear it comfortably without losing the trendy style. The splicing of gears, simple Arabic numerals and three practical",
+        "price":256,
+        "quantity":25,
+        "supplier":"Sony"
+    },
+    {
+        
+        "name":"Watch",
+        "img":"https://cdn.shopify.com/s/files/1/0272/1493/8165/products/9_903bd6e5-4773-4b43-8e5c-053061f35e15_425x425.jpg?v=1603253186",
+        "description":"Premium Material: Japan's imported Seiko TIM VK-67 quartz movement has unparalleled precision and timekeeping. The case material is made of 316L.",
+        "price":2516,
+        "quantity":252,
+        "supplier":"Apple"
+    },
+    {
+        
+        "name":"Aiamond Calo Stud Aenean",
+        "img":"https://cdn.shopify.com/s/files/1/0272/1493/8165/products/5_aceaed55-1dcd-4395-96ad-5ebadf751416_425x425.jpg?v=1603252966",
+        "description":"Excellent Waterproof: This watch has standard waterproof performance is 50m(164FT) with three -shaped sealing rings, it provides protection from most.",
+        "price":56,
+        "quantity":12,
+        "supplier":"Buggati"
+    },
+    {
+        
+        "name":"Invicta Men's 20307 Speedway",
+        "img":"https://images-na.ssl-images-amazon.com/images/I/91Uu-bY43PL._AC_UL320_SR320,320_.jpg",
+        "description":"Just place fruit, vegetables and liquid in the blender and turn the dial.Easily blend food or juice just the way you like it with this dependable partner in the kitchen.Fine Blend, Smooth Texture.Tasty & Healthy.Uniquely shaped blades prevent food accumulation.",
+        "price":75,
+        "quantity":10,
+        "supplier":"Speedway"
+    },
+    {
+        
+        "name":"Blender",
+        "img":"https://i.ibb.co/xXTWQPQ/istockphoto-504046512-612x612.png",
+        "description":"Just place fruit, vegetables and liquid in the blender and turn the dial.Easily blend food or juice just the way you like it with this dependable partner in the kitchen.Fine Blend, Smooth Texture.Tasty & Healthy.Uniquely shaped blades prevent food accumulation.",
+        "price":256,
+        "quantity":25,
+        "supplier":"Sony"
+    },
+    {
+        
+        "name":"DJI Mavic 3 - Camera Drone with 4/3 CMOS",
+        "img":"https://m.media-amazon.com/images/I/51WbS6nJE4L._AC_SX522_.jpg",
+        "description":"No Import Fees Deposit & $42.93 Shipping to BangladeshDetails Available at a lower price from other sellers that may not offer free Prime shipping.",
+        "price":2256,
+        "quantity":5,
+        "supplier":" CMOS"
+    },
+    {
+        
+        "name":"DJI Mini 2  Ultralight and Foldable",
+        "img":"https://m.media-amazon.com/images/I/519adnodmCS._AC_SX522_.jpg",
+        "description":"at less than 249 g, it weighs about as much as an apple and fits in the palm of your hand. compact and convenient, this small drone is your ideal travel companion, transforming how you capture your favorite memories.",
+        "price":56,
+        "quantity":89,
+        "supplier":"Sony"
+    }
+
+   
+]

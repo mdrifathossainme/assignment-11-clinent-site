@@ -1,0 +1,129 @@
+[debug] [2022-05-07T09:59:35.925Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T09:59:35.927Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T09:59:35.928Z] CLI Version:   10.8.0
+[debug] [2022-05-07T09:59:35.928Z] Platform:      win32
+[debug] [2022-05-07T09:59:35.928Z] Node Version:  v16.13.2
+[debug] [2022-05-07T09:59:35.929Z] Time:          Sat May 07 2022 15:59:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-07T09:59:35.929Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-07T09:59:35.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T09:59:35.989Z] > authorizing via signed-in user (mdrifathossain.mr@gmail.com)
+[debug] [2022-05-07T09:59:35.989Z] [iam] checking project assignment-11-1288d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T09:59:35.991Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions [none]
+[debug] [2022-05-07T09:59:35.991Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T09:59:37.388Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions 200
+[debug] [2022-05-07T09:59:37.388Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T09:59:37.389Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T09:59:38.148Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T09:59:38.149Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'assignment-11-1288d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-07T09:59:38.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T09:59:38.605Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T09:59:38.605Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[debug] [2022-05-07T09:59:38.607Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions [none]
+[debug] [2022-05-07T09:59:38.607Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-07T09:59:40.453Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions 500
+[debug] [2022-05-07T09:59:40.453Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-07T09:59:40.617Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-07T10:00:11.757Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T10:00:11.759Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T10:00:11.759Z] CLI Version:   10.8.0
+[debug] [2022-05-07T10:00:11.760Z] Platform:      win32
+[debug] [2022-05-07T10:00:11.760Z] Node Version:  v16.13.2
+[debug] [2022-05-07T10:00:11.761Z] Time:          Sat May 07 2022 16:00:11 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-07T10:00:11.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-07T10:00:11.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T10:00:11.827Z] > authorizing via signed-in user (mdrifathossain.mr@gmail.com)
+[debug] [2022-05-07T10:00:11.827Z] [iam] checking project assignment-11-1288d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T10:00:11.829Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions [none]
+[debug] [2022-05-07T10:00:11.829Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T10:00:13.153Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions 200
+[debug] [2022-05-07T10:00:13.153Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T10:00:13.154Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T10:00:13.556Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T10:00:13.556Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'assignment-11-1288d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-07T10:00:13.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T10:00:13.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T10:00:13.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[debug] [2022-05-07T10:00:13.961Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions [none]
+[debug] [2022-05-07T10:00:13.961Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-07T10:00:15.669Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions 500
+[debug] [2022-05-07T10:00:15.669Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-07T10:00:15.829Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-07T10:01:05.557Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T10:01:05.559Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T10:01:05.560Z] CLI Version:   10.8.0
+[debug] [2022-05-07T10:01:05.560Z] Platform:      win32
+[debug] [2022-05-07T10:01:05.560Z] Node Version:  v16.13.2
+[debug] [2022-05-07T10:01:05.561Z] Time:          Sat May 07 2022 16:01:05 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-07T10:01:05.561Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-07T10:01:05.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T10:01:05.626Z] > authorizing via signed-in user (mdrifathossain.mr@gmail.com)
+[debug] [2022-05-07T10:01:05.626Z] [iam] checking project assignment-11-1288d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T10:01:05.628Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions [none]
+[debug] [2022-05-07T10:01:05.628Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T10:01:07.029Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions 200
+[debug] [2022-05-07T10:01:07.029Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/assignment-11-1288d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T10:01:07.030Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T10:01:07.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T10:01:07.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'assignment-11-1288d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-07T10:01:07.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d [none]
+[debug] [2022-05-07T10:01:07.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d 200
+[debug] [2022-05-07T10:01:07.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/assignment-11-1288d {"projectId":"assignment-11-1288d","projectNumber":"853639734825","displayName":"assignment-11","name":"projects/assignment-11-1288d","resources":{"hostingSite":"assignment-11-1288d"},"state":"ACTIVE"}
+[debug] [2022-05-07T10:01:07.872Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions [none]
+[debug] [2022-05-07T10:01:07.872Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-07T10:01:09.521Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions 500
+[debug] [2022-05-07T10:01:09.521Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/853639734825/sites/assignment-11-1288d/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-07T10:01:09.689Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

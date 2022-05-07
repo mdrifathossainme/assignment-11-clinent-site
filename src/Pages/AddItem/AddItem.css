@@ -1,0 +1,38 @@
+.addItem{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://i.ibb.co/Vw2Q6w2/home7-quote-style2-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.additem-container{
+    
+    width: 50%;
+    margin: 0px auto;
+    box-shadow: 1px 1px 20px rgba(172, 167, 167, 0.39);
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.bg-overlap{
+    background-color: rgba(0, 0, 0, 0.591);
+    padding: 50px 0;
+}
+.addform form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+.addform form input, form textarea{
+    height: 43px;
+    border: 1px solid rgba(128, 128, 128, 0.562);
+    padding: 0 10px;
+}
+/* .addform form input:nth-child(2){
+    color: rgba(0, 0, 255, 0.486);
+ font-family: 'Source Sans Pro', sans-serif;
+
+} */

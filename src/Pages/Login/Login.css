@@ -1,0 +1,24 @@
+.forget-btn{
+   display: flex;
+   color: blue;;
+   cursor: pointer;
+}
+.forget-btn:hover{
+text-decoration: underline;
+}
+.login-password{
+    position: relative;
+ 
+}
+.login-password input[type=password]{
+padding-right: 50px;
+}
+.eyeicon{
+    position: absolute;
+    top: 32px;
+    right: 10px;
+}
+
+@media screen and (max-width:600px) {
+
+}

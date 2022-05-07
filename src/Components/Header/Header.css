@@ -1,0 +1,128 @@
+.navbar{
+background-color: #193558;
+color: #fff;
+}
+.heder-area{
+    position: relative;
+}
+.logo{
+    width: 60%;
+}
+.nav-item{
+    color: rgba(240, 240, 240, 0.753);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-item:hover{
+    color: #FFDD22;
+}
+.login{
+    padding: 8px 30px;
+    border: 1px solid;
+    transition: all 400ms ease;
+    font-weight: 500;
+}
+.login:hover{
+    text-decoration: none;
+    color: #fff;
+    border-color: #fff;
+}
+.signup{
+    background-color: #FFDD22;
+    color: #000;
+    border: 1px solid #FFDD22;
+    padding:8px 25px;
+    font-weight: 500;
+    transition: all 400ms ease
+}
+.signup:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.athenticationbtn{
+    display: flex;
+    gap: 0 10px ;
+}
+.user-img{
+    width: 50px;
+    height: 50Px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.user-menubar{
+    text-align: center;
+    position: absolute;
+    border-radius: 8px;
+    z-index: 12;
+    height: 230px;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.913);
+    color: #000;
+    top: 76px;
+    right: 20px;
+    transition: all .5s ease-in-out;
+    padding: 15px 25px;
+}
+.username h4{
+   font-size: 22px;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.217);
+}
+.user-page{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.user-page span{
+    
+    text-decoration: none;
+}
+.logout{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.logout:hover{
+    color: red;
+}
+.logout-icon{
+    margin-right: 5px;
+}
+.sinuplink{
+text-decoration: none;
+font-size: 20px;
+color: #000;
+}
+.sinuplink:hover{
+color: red;
+}
+@media screen and (max-width:600px) {
+    .navbar-brand{
+        width: 80%;
+    }
+    .logout-icon{
+        width: 10px;
+    }
+    .athenticationbtn{
+        display: flex;
+        gap: 20px ;
+    }
+    .login,.signup{
+        padding: 5px 25px;
+    }
+    .toggle-icon{
+        color: #fff !important;
+        background-color: #fff !important;
+        padding: 0 5px !important;
+    }
+}
