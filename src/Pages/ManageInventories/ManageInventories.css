@@ -9,3 +9,17 @@
 text-align:  center;
 margin-bottom: 50px;
 }
+.pagenation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.pagenation button{
+    margin: 0 12px;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+.selected{
+    background-color: #FFDD22;
+}
