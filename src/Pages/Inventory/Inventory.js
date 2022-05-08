@@ -12,7 +12,7 @@ const Inventory = () => {
     const[quantityUpdateBtn,seTQuantityUpdate]=useState(false);
     const[setTure,setSetture]=useState(false);
     const [quantity,setQuantity]=useState();
-    const [upQuantity,setUpQuantity]=useState(quantity);
+    // const [upQuantity,setUpQuantity]=useState(quantity);
    
 
     const url=`http://localhost:5000/service/${id}`
@@ -28,12 +28,13 @@ const Inventory = () => {
    const set=inventoryIem.quantity+=1
      setQuantity(set)
      setSetture(true)
-     handleupdateQuantity()
-     handleInputItem()
+     handleupdateQuantity(set)
+
   }
   const minushQuantity=()=>{
-    handleupdateQuantity()
+    
     const set=inventoryIem.quantity-=1
+    handleupdateQuantity(set)
     setQuantity(set)
     setSetture(true)
 
@@ -42,36 +43,25 @@ const Inventory = () => {
     e.preventDefault();
       const customQuantity=parseInt(e.target.number.value);
       const set=inventoryIem.quantity+=customQuantity||0;
-      console.log(customQuantity, set)
      setQuantity(set)
     e.target.reset()
-    handleupdateQuantity()
+    handleupdateQuantity(set)
   }
-const handleInputItem=(e)=>{
-    const newQuantity=parseInt(e.target.value)
-    setUpQuantity(newQuantity)
-}
-console.log(upQuantity)
 
-const handleOnchange=(e)=>{
-const customValue=parseInt(e.target.value);
-const ctv=upQuantity+customValue;
-setUpQuantity(ctv)
-}
-const handleupdateQuantity=()=>{
-            fetch(url,{
-                method:"PUT",
-                headers:{
-                    "content-type":"application/json"
-                },
-                body:JSON.stringify({quantity:upQuantity})
-               
-            })
-            .then(rea=>rea.json())
-            .then(data=>{
-                console.log(data)
-        
-            })
+const handleupdateQuantity=(set)=>{
+    fetch(url,{
+        method:"PUT",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify({quantity:set})
+       
+    })
+    .then(rea=>rea.json())
+    .then(data=>{
+       
+
+    })
         }
     return (
         <div className='inventtory-page container'>
@@ -86,14 +76,14 @@ const handleupdateQuantity=()=>{
                     <h6>Price: ${inventoryIem.price}</h6>
                     <div className="qunantity">
                         <p>Quantity:  <span>
-                        <label htmlFor='ide' ><Icon   onClick={minushQuantity} size={30} icon={minus} className="quantity-icon" /> </label>
-                        <input type="number" id='ide'  onBlur={handleInputItem} value= {setTure===true?quantity: inventoryIem.quantity }/>
+                        <label htmlFor='ide' ><Icon   onClick={minushQuantity}  icon={minus} className="quantity-icon" /> </label>
+                        <input type="number" id='ide'   value= {setTure===true?quantity: inventoryIem.quantity }/>
                         
-                       <label htmlFor="ide">  <Icon size={30}  onClick={plushQuantity} className="quantity-icon" icon={plus} /></label> </span> </p>
+                       <label htmlFor="ide">  <Icon   onClick={plushQuantity} className="quantity-icon" icon={plus} /></label> </span> </p>
                        <div className={quantityUpdateBtn===true? 'd-block':"d-none"}>
                        <div className='quantity-form'>
                        <form onSubmit={handlecustomQuantity} >
-                                <input  onChange={handleOnchange} type="number" name="number" id="" />
+                                <input  type="number" name="number" id="" />
                                <label > <input type="submit" value="Update" /></label>
                          </form>
                        </div>

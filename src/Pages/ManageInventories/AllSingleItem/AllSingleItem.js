@@ -4,7 +4,6 @@ import { Icon } from 'react-icons-kit'
 import {trash} from 'react-icons-kit/fa/trash'
 const AllSingleItem = ({item,handelManegDeleteItem}) => {
     const{_id,name,price,quantity,supplier,img,description}=item;
-    console.log(_id, name,)
     return (
         <div className='item-box'>
             <div className="mitem-img">

@@ -54,7 +54,6 @@ const ManageInventories = () => {
      
         }
         
-console.log(setItem)
     return (
 <>
 <div className='mannageItem'>

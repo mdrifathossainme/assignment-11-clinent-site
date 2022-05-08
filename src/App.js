@@ -10,16 +10,11 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import Footer from './Components/Footer/Footer';
 import RequierAuth from './Components/RequierAuth/RequierAuth';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer,} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from './Components/Loading/Loading';
 import MyItem from './Pages/MyItem/MyItem';
 import AddItem from './Pages/AddItem/AddItem';
-
-// #FFDD22
-// font-family: 'Source Sans Pro', sans-serif;
-
-
 function App() {
 
   

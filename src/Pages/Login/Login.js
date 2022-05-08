@@ -66,7 +66,6 @@ const handleresetemail=(e)=>{
     const email=e.target.value;
     setReset(email)
 }
-console.log(eperror?.message)
 
 
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Icon } from 'react-icons-kit'
 import {trash} from 'react-icons-kit/fa/trash'
 const SinglrItem = ({item , handelDeleteItem}) => {
-    console.log(item)
     const{_id,name,price,quantity,supplier,img,description}=item;
 
 

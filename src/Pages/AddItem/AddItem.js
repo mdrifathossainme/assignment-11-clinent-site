@@ -8,7 +8,6 @@ const AddItem = () => {
 const { register, handleSubmit } = useForm();
 const [user, loading, error] = useAuthState(auth);
 
-console.log(user)
 
 const onSubmit =( data )=> {
    const email= user.email;
@@ -23,7 +22,7 @@ const onSubmit =( data )=> {
    })
    .then(rea=>rea.json())
    .then(data=>{
-       console.log(data)
+      
    })
 toast('Item Add Successful')
 };
