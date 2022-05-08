@@ -32,7 +32,12 @@ function App() {
                   <Inventory/>
               </RequierAuth>
               }></Route> 
-              <Route path='/manageinventories' element={<ManageInventories/>}></Route>
+              <Route path='/manageinventories' element={
+              
+              <RequierAuth>
+                    <ManageInventories/>
+              </RequierAuth>
+            }></Route>
               <Route path='/blog' element={<Blog/>}></Route>
               <Route path='/myitem' element={
               <RequierAuth>

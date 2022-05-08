@@ -12,10 +12,9 @@ const Inventory = () => {
     const[quantityUpdateBtn,seTQuantityUpdate]=useState(false);
     const[setTure,setSetture]=useState(false);
     const [quantity,setQuantity]=useState();
-    // const [upQuantity,setUpQuantity]=useState(quantity);
    
 
-    const url=`http://localhost:5000/service/${id}`
+    const url=`https://fierce-citadel-13028.herokuapp.com/service/${id}`
 
     useEffect(()=>{
         fetch(url)
@@ -23,9 +22,12 @@ const Inventory = () => {
         .then(data=>setInventoryItem(data))
     },[])
   
+
+    
   const plushQuantity=()=>{
   
    const set=inventoryIem.quantity+=1
+  
      setQuantity(set)
      setSetture(true)
      handleupdateQuantity(set)
@@ -34,18 +36,31 @@ const Inventory = () => {
   const minushQuantity=()=>{
     
     const set=inventoryIem.quantity-=1
-    handleupdateQuantity(set)
-    setQuantity(set)
-    setSetture(true)
-
-  }
+   
+    if(set<=0){
+        alert('negative number not allowed ')
+        setQuantity(0)
+        }
+        else{
+            handleupdateQuantity(set)
+            setQuantity(set)
+        }
+        setSetture(true)
+    }
   const handlecustomQuantity=(e)=>{
     e.preventDefault();
       const customQuantity=parseInt(e.target.number.value);
       const set=inventoryIem.quantity+=customQuantity||0;
-     setQuantity(set)
-    e.target.reset()
-    handleupdateQuantity(set)
+      if( set<=0){
+        alert('Please Type Positive Number')
+        setQuantity(0)
+        setQuantity(0)
+      }else{
+        setQuantity(set)
+        e.target.reset()
+        handleupdateQuantity(set)
+      }
+    
   }
 
 const handleupdateQuantity=(set)=>{
@@ -57,11 +72,7 @@ const handleupdateQuantity=(set)=>{
         body:JSON.stringify({quantity:set})
        
     })
-    .then(rea=>rea.json())
-    .then(data=>{
-       
-
-    })
+  
         }
     return (
         <div className='inventtory-page container'>
