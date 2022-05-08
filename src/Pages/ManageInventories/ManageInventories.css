@@ -23,3 +23,12 @@ margin-bottom: 50px;
 .selected{
     background-color: #FFDD22;
 }
+.additem-btn{
+    display: flex;
+    justify-content: center;
+}
+.additem-btn button{
+    margin: 0;
+    color: gray;
+    box-shadow:1px 1px 10px rgba(128, 128, 128, 0.253);
+}

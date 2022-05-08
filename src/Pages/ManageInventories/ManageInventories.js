@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Loading from '../../Components/Loading/Loading';
 import AllSingleItem from './AllSingleItem/AllSingleItem';
 import './ManageInventories.css'
@@ -60,6 +61,10 @@ const ManageInventories = () => {
            <div className='container' >
           <div className="mannageIte-collection">
           <h1>My All Item</h1>  
+          <div className='additem-btn'>
+          <Link to="/additem"> <button id='additem' className='mabage-btn'>Add Item</button></Link>
+
+          </div>
           <div className='mannageIte-itemSection'> 
          
 
