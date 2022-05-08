@@ -125,4 +125,11 @@ color: red;
         background-color: #fff !important;
         padding: 0 5px !important;
     }
+    .user-menubar{
+        left: 80px;
+        top: 160px;
+    }
+    .logout-icon{
+        margin-right: 20px;
+    }
 }

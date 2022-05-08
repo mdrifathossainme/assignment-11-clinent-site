@@ -19,3 +19,14 @@ gap: 0 10px;
 .answer p{
     font-style: italic;
 }
+.answer>ol>li{
+    font-style: italic;
+}
+@media screen and (max-width:600px) {
+    .answer {
+       flex-direction: column;
+        }
+        .answer h5{
+            text-decoration: none;
+        }
+   }

@@ -69,3 +69,28 @@
     flex-direction: column;
     
 }
+.delete-icon{
+    font-size: 0px;
+}
+.details-btn{
+    display: flex;
+    justify-content:space-between;
+}
+@media screen and (max-width:600px) {
+    .notfounditem{
+        height: 50vh;
+        text-align: center;
+        padding: 20px;
+    }
+    .item-collection{
+        width: 100%;
+        
+    }
+    .item-box{
+        grid-template-columns: 1fr;
+        padding:  20px;
+    }
+    .item-img img{
+        width: 80%;
+    }
+}

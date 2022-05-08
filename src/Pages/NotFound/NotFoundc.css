@@ -25,3 +25,12 @@
     padding: 10px 140px;
     background-color: #FFDD22;
 }
+
+@media screen and (max-width:600px) {
+ .notfound img{
+     width: 100%;
+ }
+ .notfound>h4, .notfound>p:nth-child(1){
+     display: none;
+ }
+}

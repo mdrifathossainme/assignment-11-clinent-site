@@ -11,7 +11,6 @@ import AllCategotices from '../../Components/AllCategotices/AllCategotices';
 
 const Home = () => {
     const [products]=UseProducts([])
-console.log(products)
 
     return (
         <>

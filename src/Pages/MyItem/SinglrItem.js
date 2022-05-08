@@ -21,7 +21,7 @@ const SinglrItem = ({item , handelDeleteItem}) => {
                 <h6>Price: ${price}</h6>
             </div>
             <div className="delet-btn">
-            <Icon onClick={()=>handelDeleteItem(_id)} className='delete-icon' icon={trash} size="40" />
+                     <Icon onClick={()=>handelDeleteItem(_id)} className='delete-icon' icon={trash} size="30"  />
 
             </div>
         </div>
