@@ -3,9 +3,9 @@ font-size: 16px;
 }
 .productItem{
     padding: 20px 30px;
- 
     border-radius: 10px;
     background-color: #fff;
+   box-shadow: 1px 1px 10px #9295a351;
 }
 .details button{
     margin-top: 20px;
