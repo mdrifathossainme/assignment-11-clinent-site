@@ -1,0 +1,21 @@
+.blogpage{
+    height: 100%;
+    width: 100%;
+    padding:50px 0;
+}
+.question{
+margin-bottom: 20px;
+}
+.question h1{
+text-transform: capitalize;
+}
+.answer {
+display: flex;
+gap: 0 10px;
+}
+.answer h5{
+    text-decoration: underline;
+}
+.answer p{
+    font-style: italic;
+}
