@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Hammersmith+One&family=PT+Serif:wght@700&family=Roboto+Slab:wght@800&display=swap');
+
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+h2{
+    font-family: 'Fira Sans', sans-serif;
+}
+h4{
+    font-family: 'Hammersmith One', sans-serif;
+}
