@@ -77,3 +77,21 @@ margin: 20px 0;
     background-color: #FFDD22;
     color: #000;
 }
+
+@media screen and (max-width:1000px) {
+    .inventtory-item{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media screen and (max-width:600px) {
+    .inventtory-item{
+        grid-template-columns:1fr;
+        width: 100%;
+    padding: 20px;
+
+    }
+    .inventory-img img{
+        width: 300px;
+    }
+}
