@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Loading from '../../Components/Loading/Loading';
 import AllSingleItem from './AllSingleItem/AllSingleItem';
 import './ManageInventories.css'
 const ManageInventories = () => {
@@ -7,7 +8,7 @@ const ManageInventories = () => {
     const [size,setSize]=useState(5)
     const [item, setItem] = useState([]);
 
-
+ 
 
     useEffect(()=>{
         fetch('https://fierce-citadel-13028.herokuapp.com/itemCount')
@@ -20,7 +21,9 @@ const ManageInventories = () => {
     },[])
 
 
-
+    if(item.length<=0){
+        <Loading/>
+    }
     useEffect(()=>{
 
         const getItem=async()=>{
@@ -29,6 +32,7 @@ const ManageInventories = () => {
          fetch(url)
          .then(res=>res.json())
          .then(data=> setItem(data))
+         
         }
         getItem()
      },[item,size])
@@ -47,7 +51,9 @@ const ManageInventories = () => {
           }
       })
       } 
+     
         }
+        
 console.log(setItem)
     return (
 <>
@@ -56,6 +62,8 @@ console.log(setItem)
           <div className="mannageIte-collection">
           <h1>My All Item</h1>  
           <div className='mannageIte-itemSection'> 
+         
+
           {
               item.map(item=><AllSingleItem key={item._id} item={item} handelManegDeleteItem={handelManegDeleteItem}></AllSingleItem>)
           }
